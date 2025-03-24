@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.5em;}
+
+body{
+    font-family: 'Consolas', 'Garamond', 'Helvetica', sans-serif;
+    margin:0;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 4px 15px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 71, 12);
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 112, 20);
+}
+
+button:hover{
+    background-color: rgb(1, 46, 11);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(163, 241, 170);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(1, 112, 20);
+    font-size: 1.7em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 0.85em;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-size: 1.10em;
+}
+
+header a:hover{
+    color: rgb(1, 112, 20);
+}
+
+#logo{
+    color: rgb(1, 112, 20);
+}
+
+#hero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height:90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagen_cosecha.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+li{
+    padding: 10px 0px;
+}
+
+#verduras .container,
+#informacion .container,
+#historia .container{
+    text-align: center;
+    padding: 20px 12px;
+}
+
+#explicacion,
+#introduccion,
+#comienzo,
+#objetivo .container,
+#problemauno .container,
+#problemados .container, 
+#final .container,
+#tomates .texto,
+#cebollas .texto,
+#lechugas .texto,
+#calabacines .texto{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.colort{
+    color: rgb(170, 8, 8);
+}
+
+.colorce{
+    color:rgb(155, 121, 8)
+}
+
+.colorca{
+    color:rgb(90, 160, 83)
+}
+
+.colorl{
+    color:rgb(1, 138, 19)
+}
+
+@media (min-width: 720px){
+    header{
+        position:fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 15px;
+    }
+
+    .introduccion{
+        padding-top: 60px;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    #verduras .container{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    #verduras .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("verduras.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    width: 500px;
+    border-radius: 20px;
+    }
+    
+    #verduras h2{
+        margin-top: 0px;
+    }
+    
+    #verduras .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        justify-content: center;
+    }
+
+    #informacion .container{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    #informacion .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("informacion.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    width: 500px;
+    border-radius: 20px;
+    }
+    
+    #informacion h2{
+        margin-top: 0px;
+    }
+    
+    #informacion .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        justify-content: center;
+    }
+
+    #historia .container{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    #historia .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("informacion.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    width: 500px;
+    border-radius: 20px;
+    }
+    
+    #historia h2{
+        margin-top: 0px;
+    }
+    
+    #historia .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        justify-content: center;
+    }
+
+    #tomates .container{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    #tomates .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("tomates.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    min-height: 650px;
+    width: 500px;
+    border-radius: 20px;
+    }
+    
+    #tomates h2{
+        margin-top: 0px;
+    }
+    
+    #tomates .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        justify-content: center;
+    }
+
+    #cebollas .container{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    #cebollas .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("cebollas.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    min-height: 650px;
+    width: 500px;
+    border-radius: 20px;
+    }
+    
+    #cebollas h2{
+        margin-top: 0px;
+    }
+    
+    #cebollas .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        justify-content: center;
+    }
+
+    #calabacines .container{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    #calabacines .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("calabacines.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    min-height: 650px;
+    width: 500px;
+    border-radius: 20px;
+    }
+    
+    #calabacines h2{
+        margin-top: 0px;
+    }
+    
+    #calabacines .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        justify-content: center;
+    }
+
+    #lechugas .container{
+        display: flex;
+        padding-top: 20px;
+        justify-content: space-evenly;
+    }
+
+    #lechugas .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("lechugas.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    min-height: 650px;
+    width: 500px;
+    border-radius: 20px;
+    }
+    
+    #lechugas h2{
+        margin-top: 0px;
+    }
+    
+    #lechugas .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        justify-content: center;
+    }
+
+    #problemauno .img-container{
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("cultivos.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    min-height: 650px;
+    min-width: 720px;
+    border-radius: 100px;
+    }
+
+    #explicacion{
+        padding-left: 15px;
+    }
+}

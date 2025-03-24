@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <title>CEVA | pedidos</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <p><a href="index.html"><span class="logo">CEVA</span></a></p>
+                <nav>
+                    <a href="historia.html">Nuestra historia</a>
+                    <a href="verduras.html">Verduras que vendemos</a>
+                </nav>
+            </div>
+        </header>
+        <section id="explicacion" class="introduccion">
+            <h2>Información y pedidos</h2>
+            <p>En el formulario que se encuentra a continuación, usted podrá realizar sus pedidos y/o pedir información. En la primera
+                casilla, elija el tipo de consulta que quiera realizar. A continuación, necesitaremos su correo electrónico para poder 
+                contestar el mensaje con la información solicitada. finalmente, dispone de un area de texto dónde debe desarrollar la 
+                consulta para que nosotros podamos responder de la forma más detallada posible. No es necesario contenerse ya que cuanto
+                más nos cuentes, mejor será nuestra respuesta.
+            </p>
+        </section>
+        <section id="formulario">
+            <div class="container">
+                <form action="https://formspree.io/f/xqapeqky" method="POST">
+                    <div class="form-group">
+                        <label for="final">¿Cuál es la finalidad de la petición?</label>
+                        <select name="finalidad" id="final" class="form-control">
+                            <option value="...">Elija una opción</option>
+                            <option value="pedido">Quiero realizar un pedido</option>
+                            <option value="informacion">Quiero obtener más informacion acerca de algo</option>
+                            <option value="servicio-especial">Quiero suscribirme al servicio especial mensual</option>
+                            <option value="reclamación">Quiero realizar una reclamación</option>
+                            <option value="otros">Otra finalidad</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="correo">Indique su correo electrónico:</label>
+                        <input type="email" name="correo" id="correo" placeholder="Correo electrónico" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="consulta">Escriba su consulta:</label>
+                        <textarea name="consulta" id="consulta" placeholder="Escriba aqui" rows="20" cols="100" class="form-control" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Restablecer</button>
+                    </div>
+                    
+                </form>
+            </div>
+            </section>
+            <footer>
+                <div class="container">
+                    
+            </div>
+        </footer>
+    </body>
+</html>
